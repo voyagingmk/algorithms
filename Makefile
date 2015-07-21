@@ -9,6 +9,7 @@ SRCDIR = ./src
 INCLUDEDIR = -I./include -I.
 DEPS = 
 LIBS = -lm
+BINDIR = ./bin
 
 PROGRAMS = m_based_demo \
 			integer_demo \
@@ -75,193 +76,193 @@ PROGRAMS = m_based_demo \
 all: $(PROGRAMS)
 
 m_based_demo: $(SRCDIR)/m_based_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 integer_demo: $(SRCDIR)/integer_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 insertion_sort_demo: $(SRCDIR)/insertion_sort_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 radix_sort_demo: $(SRCDIR)/radix_sort_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 shuffle_demo: $(SRCDIR)/shuffle_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 quick_sort_demo: $(SRCDIR)/quick_sort_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 merge_sort_demo: $(SRCDIR)/merge_sort_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 random_select_demo: $(SRCDIR)/random_select_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 hash_multi_demo: $(SRCDIR)/hash_multi_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 hash_table_demo: $(SRCDIR)/hash_table_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 double_linked_list_demo: $(SRCDIR)/double_linked_list_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 stack_demo: $(SRCDIR)/stack_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 queue_demo: $(SRCDIR)/queue_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 priority_queue_demo: $(SRCDIR)/priority_queue_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 prime_demo: $(SRCDIR)/prime_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 universal_hash_demo: $(SRCDIR)/universal_hash_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 perfect_hash_demo: $(SRCDIR)/perfect_hash_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 binary_search_tree_demo: $(SRCDIR)/binary_search_tree_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 rbtree_demo: $(SRCDIR)/rbtree_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 heap_demo: $(SRCDIR)/heap_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 interval_tree_demo: $(SRCDIR)/interval_tree_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 dos_tree_demo: $(SRCDIR)/dos_tree_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 skiplist_demo: $(SRCDIR)/skiplist_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 lcs_demo: $(SRCDIR)/lcs_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 prim_mst_demo: $(SRCDIR)/prim_mst_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 directed_graph_demo: $(SRCDIR)/directed_graph_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 undirected_graph_demo: $(SRCDIR)/undirected_graph_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 dijkstra_demo: $(SRCDIR)/dijkstra_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 bellman_ford_demo: $(SRCDIR)/bellman_ford_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 graph_search_demo: $(SRCDIR)/graph_search_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 edmonds_karp_demo: $(SRCDIR)/edmonds_karp_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 astar_demo: $(SRCDIR)/astar_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 hash_string_demo: $(SRCDIR)/hash_string_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 bitset_demo: $(SRCDIR)/bitset_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 bloom_filter_demo: $(SRCDIR)/bloom_filter_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 sha1_demo: $(SRCDIR)/sha1_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 huffman_demo: $(SRCDIR)/huffman_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 word_seg_demo: $(SRCDIR)/word_seg_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 md5_demo: $(SRCDIR)/md5_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 trie_demo: $(SRCDIR)/trie_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 simhash_demo: $(SRCDIR)/simhash_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 imath_demo: $(SRCDIR)/imath_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 random_demo: $(SRCDIR)/random_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 k-means_demo: $(SRCDIR)/k-means_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 kmp_demo : $(SRCDIR)/kmp_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 heap_sort_demo: $(SRCDIR)/heap_sort_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 kruskal_mst_demo: $(SRCDIR)/kruskal_mst_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 LRU_cache_demo: $(SRCDIR)/LRU_cache_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 base64_demo: $(SRCDIR)/base64_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 max_subarray_demo: $(SRCDIR)/max_subarray_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 disjoint-set_demo: $(SRCDIR)/disjoint-set_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 relabel_to_front_demo: $(SRCDIR)/relabel_to_front_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 btree_demo: $(SRCDIR)/btree_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 sort_demo: $(SRCDIR)/sort_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 fib-heap_demo: $(SRCDIR)/fib-heap_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 scc_demo: $(SRCDIR)/scc_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 bubble_sort_demo: $(SRCDIR)/bubble_sort_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 selection_sort_demo: $(SRCDIR)/selection_sort_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 8queue_demo: $(SRCDIR)/8queue_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 palindrome_demo: $(SRCDIR)/palindrome_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 suffix_tree_demo: $(SRCDIR)/suffix_tree_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 avl_demo: $(SRCDIR)/avl_demo.cpp
-	$(CPP) $(CFLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(CFLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 suffix_array_demo: $(SRCDIR)/suffix_array_demo.cpp
-	$(CPP) $(C11FLAGS) -o $@ $^ $(INCLUDEDIR) $(LIBS)
+	$(CPP) $(C11FLAGS) -o $(BINDIR)/$@ $^ $(INCLUDEDIR) $(LIBS)
 
 clean:
 	rm -rf $(PROGRAMS) *.dSYM
